@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.eazypass"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+  <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+	<instrumentation android:name="android.test.InstrumentationTestRunner"
+       android:targetPackage="com.android.eazypass.test" android:label="Tests for My App" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.android.eazypass.activities.MainActivity"
+            android:screenOrientation="landscape" 
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+	        android:name="com.android.eazypass.activities.Login"
+	        android:label="@string/app_name"
+	        >
+   		</activity>
+   		<activity
+	        android:name="com.android.eazypass.activities.Register"
+	        android:label="@string/app_name"
+	        >
+   		</activity>
+   		<activity
+	        android:name="com.android.eazypass.activities.Dashboard"
+	        android:screenOrientation="landscape" 
+            android:configChanges="keyboardHidden|orientation"
+	        android:label="@string/app_name"
+	        >
+   		</activity>
+   		<activity
+	        android:name="com.android.eazypass.activities.Buy_Ticket"
+	        android:label="@string/app_name"
+	        >
+   		</activity>
+   		<activity
+	        android:name="com.android.eazypass.activities.Seats"
+	        android:label="@string/app_name"
+	        >
+   		</activity>
+   		           <activity
+            android:name="com.android.eazypass.activities.Payment"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <uses-library android:name="android.test.runner" />
+    </application>    
+</manifest>
