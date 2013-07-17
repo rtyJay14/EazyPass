@@ -1,0 +1,40 @@
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/splash_screen_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+     >
+
+</RelativeLayout> -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:gravity="center_vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".Dashboard" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/splash_screen_01" />
+
+    </RelativeLayout>
+
+</LinearLayout>

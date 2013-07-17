@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EazyPass</string>
+    <string name="action_settings">Settings</string>
+    <string name="LoginMain">Log In</string>
+    <string name="RegisterMain">Register</string>
+    <string name="Back">&lt;&lt;</string>
+    <string name="LoginDialog">Log In</string>
+    <string name="CreateAnAccountDialog">Create an Account</string>
+    <string name="editTextUsernameToLogin">Username</string>
+    <string name="editTextPasswordToLogin">Password</string><string name="confirmPassword">Confirm Password</string>
+    <string name="CreateAnAccountDialog2">Create</string>
+    <string name="Trailer">Trailer</string>
+    <string name="Details">Details</string>
+    <string name="Gallery">Gallery</string>
+    <string name="BuyTicket">Buy Ticket</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+
+</resources>

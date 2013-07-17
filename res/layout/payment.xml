@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/Payment_editTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Enter Card Number"
+                android:inputType="number"
+                android:textColor="@color/Black" >
+
+                <requestFocus />
+            </EditText>
+            
+            <EditText
+                android:id="@+id/Payment_editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/Black" />
+
+            <EditText
+                android:id="@+id/Payment_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="none|textPassword"
+                android:textColor="@color/Black" /> 
+                          
+            <EditText
+                android:id="@+id/Payment_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Enter your E-mail"
+                android:inputType="textAutoCorrect|textAutoComplete|textEmailAddress"
+                android:textColor="@color/Black" />
+            
+            <EditText
+                android:id="@+id/Payment_contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:hint="Contact No:"
+                android:textColor="@color/Black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+             >
+
+            <Button
+                android:id="@+id/Payment_done"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@color/Black"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="@string/CreateAnAccountDialog2"
+                android:text="Buy Ticket"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Payment_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="2"
+                android:background="@color/Black"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cancel"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

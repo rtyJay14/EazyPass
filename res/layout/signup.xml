@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/editTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColor="@color/Black">
+
+                <requestFocus />
+            </EditText>
+            
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/Black" />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="none|textPassword"
+                android:textColor="@color/Black" /> 
+                          
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Enter your E-mail"
+                android:textColor="@color/Black" />
+            
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:hint="Contact No:"
+                android:textColor="@color/Black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/CreateAnAccountDialog2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@color/Black"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="@string/CreateAnAccountDialog2"
+                android:text="@string/CreateAnAccountDialog2"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/CreateAnAccountDialog2"
+                android:layout_weight="2"
+                android:background="@color/Black"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cancel"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="48dp"
+                    android:text="Damn! I forgot my passw*rd"
+                    android:textColor="@color/Black" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

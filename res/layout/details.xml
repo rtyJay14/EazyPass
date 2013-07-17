@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:baselineAligned="false"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Dashboard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/Black"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UselessParent" >
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/Black"
+            android:text="@string/Back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:id="@+id/Welcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="Welcome:"
+                        android:textSize="14sp" 
+                         />
+
+                    <TextView
+                        android:id="@+id/user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="user"
+                        android:textSize="14dp" 
+                         />
+
+                </LinearLayout>
+                        
+                <Button
+                    android:id="@+id/LoginMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Green"
+                    android:onClick="Login"
+                    android:text="@string/LoginMain"
+                    android:textSize="12sp" 
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/RegisterMain"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/Green"
+                    android:longClickable="true"
+                    android:minHeight="30dp"
+                    android:onClick="Register"
+                    android:text="@string/RegisterMain"
+                    android:textSize="12sp"
+                    android:width="40dp" 
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Black" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/movie_list_a" />
+
+                    <Button
+                        android:id="@+id/Trailer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/Trailer" />
+
+                    <Button
+                        android:id="@+id/Details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/Details" />
+
+                    <Button
+                        android:id="@+id/Gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/Gallery" />
+
+                    <Button
+                        android:id="@+id/BuyTicket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BuyTicket" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
